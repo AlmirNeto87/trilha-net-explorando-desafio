@@ -144,11 +144,11 @@ while (continuar)
             Console.WriteLine("Hóspedes na Reserva:");
             for (var index = 0; index < listaReservas.Count; index++)
             {
-                Console.WriteLine($"Reserva {index + 1}:");
-                foreach (var hospede in listaReservas[index].Hospedes)
-                {
-                    Console.WriteLine($"- {hospede.Nome}");
-                }
+                Console.WriteLine($"Reserva {index + 1} Possui {listaReservas[index].ObterQuantidadeHospedes()}:");
+                 foreach (var hospede in listaReservas[index].Hospedes)
+                 {
+                     Console.WriteLine($"- {hospede.Nome}");
+                 }
                 Console.WriteLine();
             }
             break;
